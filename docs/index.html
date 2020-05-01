@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/main.css">
+  <script async src="./js/main.js"></script>
+  <title>Base Apparel</title>
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <img class="logo" src="./assets/img/logo.svg" alt="Logo Base Aparel">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="left">
+                        <div class="left__container">
+                            <h1>We're</h1>
+                            <h1><b>Coming</b></h1>
+                            <h1><b>Soon</b></h1>
+                            <p>Hello fellow shoppers! We're currentlybuilding our new fashion store.
+                                Add your email below to stay up-to-date with announcements and our launch
+                                deals. 
+                            </p>
+                            <form action="" novalidate>
+                                <div class="form__container">
+                                    <input id="mail" name="mail" type="email" placeholder="Email Address" pattern="^([a-zA-Z0-9_\-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([a-zA-Z0-9\-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$">
+                                    <img id="icon-error" src="./assets/img/icon-error.svg" alt="">
+                                    <input id="submit" name="submit" type="submit" value="">
+                                </div>
+                                <span class="validation" aria-live="polite"></span>  
+                            </form>
+                        </div>
+                    </div>
+                    <div class="right">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div class="background">
+        <div class="background__left"></div>
+        <div class="background__right"></div>
+    </div>
+    <div id="attribution" class="">
+        <h6>Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>. Coded with <i class="fa fa-heart"></i> by <a href="#">Laura Muñoz Caicedo</a>.</h6>
+    </div>
+</body>
+</html>

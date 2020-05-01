@@ -1,0 +1,17 @@
+header{
+    height: 20vh;
+    padding: $padding-base*4 0 ;
+    @include mq('m'){
+        position: fixed;
+        top: 0;
+        height: 13vh;
+        padding: $padding-base*1 0;
+        .container{
+           display: flex;
+           align-items: center; 
+        }
+        .logo{
+            height: 20px;
+        }
+    }
+}

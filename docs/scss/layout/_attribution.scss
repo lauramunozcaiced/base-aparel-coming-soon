@@ -1,0 +1,19 @@
+#attribution{
+    width: 55%;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    padding: $padding-base*2;
+    z-index: 0;
+    @include mq('m'){
+        width: 100%;
+        padding: 0 $padding-base;
+        text-align: center;
+    }
+    h6{
+       font-size: 0.8rem;
+    }
+    a, i{
+        color: $sign-color!important;
+    }
+}

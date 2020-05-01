@@ -1,0 +1,120 @@
+main{
+    height: 80vh;
+    @include mq('m'){
+       height: 100vh;
+       .right{
+           height: 30vh;
+       }
+     }
+    .row{
+        height: 60vh;
+        display: flex;
+        @include mq('m'){
+            height: 100%;
+            width: 100%;
+            flex-direction: column-reverse;
+            justify-content: flex-end;
+            margin-top: 15vh;
+        }
+    }
+    .left{
+        width: $left-percent;
+        display: flex;
+        align-items: center;
+        @include mq('m'){
+            height: 55vh;
+            width: 100%;
+            &__container{
+                height: 100%;
+                padding-top: $padding-base*2
+            }
+            
+        }
+        p{
+            width: 60%;
+            @include mq('t'){
+                width: 80%;
+            }
+            @include mq('st'){
+                width: 90%;
+            }
+            @include mq('m'){
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .validation{
+            color: $error-color;
+            @include mq('st'){
+                font-size: .8rem;
+             }
+        }
+        .form__container{
+            width: 60%;
+            display: flex;
+            position: relative;
+            @include mq('t'){
+                width: 80%;
+            }
+            @include mq('st'){
+                width: 90%;
+            }
+            @include mq('m'){
+                width: 100%;
+            }
+            
+            #mail{
+                position: relative;
+                padding: $padding-base $padding-base*13 $padding-base $padding-base*3;
+                width: 100%;
+                border: $letter-spacing solid $primary-color;
+                border-radius:22px;
+                &.is_error{
+                    border: $letter-spacing solid $error-color;
+                  }
+                &.is_correct{
+                    border: $letter-spacing solid $active-color;
+                }
+                &::before{
+                    content: 'Holi';
+                }
+            }
+            #icon-error{
+                position: absolute;
+                top: 9px;
+                right: 73px;
+                display: none;
+                &.show{
+                    display: block;
+                }
+                
+            }
+            #submit{
+                cursor: auto;
+                padding: $padding-base $padding-base*4;
+                border: none;
+                height: 100%;
+                position: absolute;
+                right: 0;
+                border-radius: 28px;
+                background: url('../assets/img/icon-arrow.svg') no-repeat 26px 10px;
+                background-color: $sign-color;
+                transition: all .2s;
+                 
+                &.no_active{
+                    background-color: $unactive-color;
+                    cursor: no-drop;
+                }
+                &.active{
+                    cursor: pointer;
+                    background-color: $active-color;
+                    &:hover{
+                        background-color: #64ab11;
+                    }
+                }
+                  
+                  
+            }
+        }
+    }
+}
